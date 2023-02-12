@@ -7,7 +7,7 @@
     "preview": "nuxt preview",
     "css:gen": "panda codegen --clean",
     "css:dev": "panda --watch",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare && pnpm css:gen"
   },
   "devDependencies": {
     "@nuxt/content": "^2.4.3",
