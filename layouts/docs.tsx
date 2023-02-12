@@ -12,6 +12,7 @@ export default defineComponent({
         <epic.main class={content()}>
           {slots.default?.()}
         </epic.main>
+        <epic.div pt="24" />
       </epic.div>
     )
   }
