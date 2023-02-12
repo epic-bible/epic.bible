@@ -6,6 +6,7 @@ node_modules
 .output
 .env
 dist
+.ideas.md
 
 ## CSS Panda
 styled-system

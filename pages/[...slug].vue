@@ -1,9 +1,13 @@
 <template>
-  <Markdown>
-    <ContentDoc />
-  </Markdown>
+  <ContentDoc />
 </template>
 
 <script setup lang="ts">
-import Markdown from "@/components/wrappers/content";
+definePageMeta({
+  layout: "docs",
+});
+
+function wait(ms: number) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
 </script>

@@ -12,12 +12,14 @@
   "devDependencies": {
     "@nuxt/content": "^2.4.3",
     "@types/node": "^18.13.0",
+    "css-panda": "0.0.0-dev-20230212121547",
     "nuxt": "^3.1.2",
     "typescript": "^4.9.5"
   },
   "dependencies": {
+    "@ark-ui/vue": "0.0.0-rc-20230212155624",
+    "@fontsource/ibm-plex-sans": "^4.5.13",
     "autoprefixer": "^10.4.13",
-    "css-panda": "0.0.0-dev-20230212115356",
     "postcss": "^8.4.21"
   }
 }

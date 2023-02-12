@@ -15,9 +15,6 @@ export default defineNuxtConfig({
           charset: "utf-8",
         },
       ],
-      link: [
-        { rel: "icon", type: "image/x-icon", href: "/jonathan-bakebwa.png" },
-      ],
       script: [
         {
           async: true,
