@@ -2,7 +2,7 @@ import type { SystemStyleObject } from "@chakra-ui/vue-next";
 import { mode } from "@chakra-ui/vue-theme-tools";
 
 export const globalStyles: SystemStyleObject = {
-  html: {
+  "html, body": {
     color: mode("gray.700 !important", "whiteAlpha.900 !important"),
     bg: "bodyBg",
     fontFamily: "body",

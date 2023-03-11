@@ -55,12 +55,12 @@ const Book = defineComponent({
                 <CWrapItem key={chapter}>
                   <NuxtLink to={`/books/${props.book?.name}/${chapter}`}>
                     <CIconButton
-                      colorScheme={"epic"}
                       variant="outline"
                       rounded="none"
                       size="lg"
-                      color={"epic.400"}
                       ariaLabel={`Chapter ${chapter}`}
+                      _hover={{ bg: "transparent" }}
+                      _active={{ bg: "transparent" }}
                     >
                       {chapter}
                     </CIconButton>

@@ -4,6 +4,7 @@ import {
   CBreadcrumb,
   CBreadcrumbItem,
   CHStack,
+  CHeading,
 } from "@chakra-ui/vue-next";
 import { PropType } from "vue";
 import { NuxtLink } from "#components";
@@ -49,19 +50,13 @@ const Verses = defineComponent({
               </chakra.a>
             </CBreadcrumbItem>
             <CBreadcrumbItem>
-              <chakra.a
-                as={NuxtLink}
-                // to={`/books/${encodeURIComponent(`${props.book}`)}/${
-                //   props.chapter
-                // }`}
-                textDecor={"none"}
-                fontWeight="bold"
-              >
+              <chakra.a as={NuxtLink} textDecor={"none"} fontWeight="bold">
                 {bookAndChapter.value}
               </chakra.a>
             </CBreadcrumbItem>
           </CBreadcrumb>
         )}
+        <CHeading>{bookAndChapter.value}</CHeading>
         {verses.value?.map((verse) => (
           <NuxtLink
             key={verse.ref}
@@ -69,7 +64,13 @@ const Verses = defineComponent({
           >
             <CHStack>
               <chakra.sup mt={4}>{verse.verse}</chakra.sup>
-              <chakra.p innerHTML={verse.text} />
+              <chakra.p
+                innerHTML={verse.text}
+                _hover={{
+                  textDecoration: "underline",
+                  textDecorationStyle: "dashed",
+                }}
+              />
             </CHStack>
           </NuxtLink>
         ))}

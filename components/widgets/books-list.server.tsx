@@ -16,9 +16,11 @@ const BooksListWidget = defineComponent({
             <NuxtLink to={`/books/${book.name}`}>
               <CButton
                 size="sm"
-                colorScheme={"epic"}
                 variant="outline"
                 rounded="full"
+                colroScheme={"green"}
+                _hover={{ bg: "transparent" }}
+                _active={{ bg: "transparent" }}
               >
                 {book.name}
               </CButton>

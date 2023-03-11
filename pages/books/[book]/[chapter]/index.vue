@@ -1,9 +1,9 @@
 <template>
-  <Verses :verses="verses || []" :book="_book" :chapter="_chapter" />
+  <Chapter :verses="verses || []" :book="_book" :chapter="_chapter" />
 </template>
 
 <script setup lang="ts">
-import Verses from "@/components/widgets/verses.server";
+import Chapter from "@/components/widgets/chapter.server";
 import { useSupabase } from "@/hooks/use-supabase";
 
 const route = useRoute();

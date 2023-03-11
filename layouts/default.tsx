@@ -6,9 +6,9 @@ export default defineComponent({
   name: "DefaultLayout",
   setup(_, { slots }) {
     return () => (
-      <chakra.div>
+      <chakra.div minH="100vh">
         <TopNavigation />
-        <CContainer minH="100vh" py={5} mx="auto">
+        <CContainer py={5} mx="auto">
           <NuxtLoadingIndicator color="#1aff75" />
           <chakra.main>{slots.default?.()}</chakra.main>
         </CContainer>

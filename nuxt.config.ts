@@ -1,3 +1,4 @@
+import { extendTheme } from "@chakra-ui/vue-next";
 import { theme } from "./theme";
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
@@ -33,7 +34,7 @@ export default defineNuxtConfig({
   ],
   css: ["@/styles/typography/all.css"],
   chakra: {
-    extendTheme: theme,
+    extendTheme: extendTheme(theme),
   },
   experimental: {
     componentIslands: true,
