@@ -16,7 +16,7 @@ const TopNavigation = defineComponent({
   setup() {
     const { toggleColorMode } = useColorMode();
     return () => (
-      <CContainer py={5}>
+      <CContainer py={5} maxW={"3xl"}>
         <CFlex justifyContent={"space-between"}>
           <CHStack spacing={5}>
             <NuxtLink class="anchor" to="/">

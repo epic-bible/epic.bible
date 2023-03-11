@@ -6,7 +6,7 @@ const Hero = defineComponent({
   setup() {
     return () => (
       <CStack spacing={6}>
-        <CHeading>Welcome to Epic Bible</CHeading>
+        <CHeading fontSize={"3rem"}>Welcome to Epic Bible</CHeading>
         <BooksListWidget />
       </CStack>
     );

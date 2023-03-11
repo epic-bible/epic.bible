@@ -66,7 +66,7 @@ const Verses = defineComponent({
             key={verse.ref}
             to={`/books/${verse.book}/${verse.chapter}/${verse.verse}`}
           >
-            <CHStack>
+            <CHStack fontSize={"lg"}>
               <chakra.sup mt={4}>{verse.verse}</chakra.sup>
               <chakra.p
                 innerHTML={verse.text}

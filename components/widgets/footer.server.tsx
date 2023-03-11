@@ -15,7 +15,7 @@ const BottomFooter = defineComponent({
   setup() {
     const year = new Date().getFullYear();
     return () => (
-      <CContainer py={5}>
+      <CContainer py={5} maxW={"3xl"}>
         <CStack>
           <CCenter>
             <CHStack>
