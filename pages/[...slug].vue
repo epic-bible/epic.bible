@@ -1,5 +1,5 @@
 <template>
-  <ContentDoc />
+  <ContentDoc class="chakra-prose" />
 </template>
 
 <script setup lang="ts">

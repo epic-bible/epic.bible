@@ -1,9 +1,7 @@
+import { theme } from "./theme";
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  postcss: {
-    plugins: { "css-panda/postcss": {} },
-  },
-  css: ["@/styles/panda.css"],
   app: {
     head: {
       meta: [
@@ -26,5 +24,12 @@ export default defineNuxtConfig({
       ],
     },
   },
-  modules: ["@nuxt/content"],
+  modules: [
+    "@nuxt/content",
+    "@chakra-ui/nuxt-next",
+    "@/modules/content-chunks.module.ts",
+  ],
+  chakra: {
+    extendTheme: theme,
+  },
 });
