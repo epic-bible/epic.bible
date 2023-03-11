@@ -29,4 +29,14 @@ const { data: verses } = useAsyncData(
 definePageMeta({
   layout: "default",
 });
+
+useHead({
+  title: `${_book.value} ${_chapter.value} - Epic Bible`,
+  meta: [
+    {
+      name: "description",
+      content: "Fast, Fearless, and Free Bible Study",
+    },
+  ],
+});
 </script>
