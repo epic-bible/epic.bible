@@ -4,128 +4,128 @@ export type Json =
   | boolean
   | null
   | { [key: string]: Json }
-  | Json[]
+  | Json[];
 
 export interface Database {
   public: {
     Tables: {
       Bibles: {
         Row: {
-          abbreviation: string
-          created_at: string | null
-          id: string
-          language: string
-          name: string
-          version_id: string
-        }
+          abbreviation: string;
+          created_at: string | null;
+          id: string;
+          language: string;
+          name: string;
+          version_id: string;
+        };
         Insert: {
-          abbreviation: string
-          created_at?: string | null
-          id?: string
-          language: string
-          name: string
-          version_id: string
-        }
+          abbreviation: string;
+          created_at?: string | null;
+          id?: string;
+          language: string;
+          name: string;
+          version_id: string;
+        };
         Update: {
-          abbreviation?: string
-          created_at?: string | null
-          id?: string
-          language?: string
-          name?: string
-          version_id?: string
-        }
-      }
+          abbreviation?: string;
+          created_at?: string | null;
+          id?: string;
+          language?: string;
+          name?: string;
+          version_id?: string;
+        };
+      };
       Books: {
         Row: {
-          book_id: string
-          chapters: number
-          created_at: string | null
-          id: string
-          name: Database["public"]["Enums"]["valid_book_type"]
-          testament: Database["public"]["Enums"]["valid_testament_type"]
-        }
+          book_id: string;
+          chapters: number;
+          created_at: string | null;
+          id: string;
+          name: Database["public"]["Enums"]["valid_book_type"];
+          testament: Database["public"]["Enums"]["valid_testament_type"];
+        };
         Insert: {
-          book_id: string
-          chapters: number
-          created_at?: string | null
-          id?: string
-          name: Database["public"]["Enums"]["valid_book_type"]
-          testament: Database["public"]["Enums"]["valid_testament_type"]
-        }
+          book_id: string;
+          chapters: number;
+          created_at?: string | null;
+          id?: string;
+          name: Database["public"]["Enums"]["valid_book_type"];
+          testament: Database["public"]["Enums"]["valid_testament_type"];
+        };
         Update: {
-          book_id?: string
-          chapters?: number
-          created_at?: string | null
-          id?: string
-          name?: Database["public"]["Enums"]["valid_book_type"]
-          testament?: Database["public"]["Enums"]["valid_testament_type"]
-        }
-      }
+          book_id?: string;
+          chapters?: number;
+          created_at?: string | null;
+          id?: string;
+          name?: Database["public"]["Enums"]["valid_book_type"];
+          testament?: Database["public"]["Enums"]["valid_testament_type"];
+        };
+      };
       Chapters: {
         Row: {
-          book: Database["public"]["Enums"]["valid_book_type"]
-          chapter: number
-          chapter_name: string
-          created_at: string | null
-          id: string
-          verses_size: number
-        }
+          book: Database["public"]["Enums"]["valid_book_type"];
+          chapter: number;
+          chapter_name: string;
+          created_at: string | null;
+          id: string;
+          verses_size: number;
+        };
         Insert: {
-          book: Database["public"]["Enums"]["valid_book_type"]
-          chapter: number
-          chapter_name: string
-          created_at?: string | null
-          id?: string
-          verses_size: number
-        }
+          book: Database["public"]["Enums"]["valid_book_type"];
+          chapter: number;
+          chapter_name: string;
+          created_at?: string | null;
+          id?: string;
+          verses_size: number;
+        };
         Update: {
-          book?: Database["public"]["Enums"]["valid_book_type"]
-          chapter?: number
-          chapter_name?: string
-          created_at?: string | null
-          id?: string
-          verses_size?: number
-        }
-      }
+          book?: Database["public"]["Enums"]["valid_book_type"];
+          chapter?: number;
+          chapter_name?: string;
+          created_at?: string | null;
+          id?: string;
+          verses_size?: number;
+        };
+      };
       Verses: {
         Row: {
-          _v: string
-          book: Database["public"]["Enums"]["valid_book_type"]
-          chapter: number
-          created_at: string | null
-          id: number
-          ref: string
-          text: string
-          verse: number
-        }
+          _v: string;
+          book: Database["public"]["Enums"]["valid_book_type"];
+          chapter: number;
+          created_at: string | null;
+          id: number;
+          ref: string;
+          text: string;
+          verse: number;
+        };
         Insert: {
-          _v: string
-          book: Database["public"]["Enums"]["valid_book_type"]
-          chapter: number
-          created_at?: string | null
-          id?: number
-          ref: string
-          text: string
-          verse: number
-        }
+          _v: string;
+          book: Database["public"]["Enums"]["valid_book_type"];
+          chapter: number;
+          created_at?: string | null;
+          id?: number;
+          ref: string;
+          text: string;
+          verse: number;
+        };
         Update: {
-          _v?: string
-          book?: Database["public"]["Enums"]["valid_book_type"]
-          chapter?: number
-          created_at?: string | null
-          id?: number
-          ref?: string
-          text?: string
-          verse?: number
-        }
-      }
-    }
+          _v?: string;
+          book?: Database["public"]["Enums"]["valid_book_type"];
+          chapter?: number;
+          created_at?: string | null;
+          id?: number;
+          ref?: string;
+          text?: string;
+          verse?: number;
+        };
+      };
+    };
     Views: {
-      [_ in never]: never
-    }
+      [_ in never]: never;
+    };
     Functions: {
-      [_ in never]: never
-    }
+      [_ in never]: never;
+    };
     Enums: {
       valid_book_type:
         | "Genesis"
@@ -193,11 +193,11 @@ export interface Database {
         | "2 John"
         | "3 John"
         | "Jude"
-        | "Revelation"
-      valid_testament_type: "ot" | "nt" | "ap"
-    }
+        | "Revelation";
+      valid_testament_type: "ot" | "nt" | "ap";
+    };
     CompositeTypes: {
-      [_ in never]: never
-    }
-  }
+      [_ in never]: never;
+    };
+  };
 }

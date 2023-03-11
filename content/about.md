@@ -1,8 +1,8 @@
 # About Epic Bible
 
-[Return Home](/)
+Hi 👋🏽! My name is Jonathan.
 
-Hi 👋🏽! My name is Jonathan. Welcome to Epic Bible!
+Welcome to Epic Bible!
 
 I'm building the Epic Bible Application to help me study the Bible conveniently. When studying the Word, I value speed, and accessibility when looking for scriptures.
 

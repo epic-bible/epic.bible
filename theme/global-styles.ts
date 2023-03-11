@@ -62,7 +62,7 @@ export const globalStyles: SystemStyleObject = {
       lineHeight: "tall",
     },
     "p + p": {
-      marginTop: "6",
+      marginTop: 5,
     },
     "a.heading-anchor": {
       opacity: 0,
