@@ -5,12 +5,12 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare && pnpm gen:db:types && yarn lintfix",
+    "postinstall": "nuxt prepare",
     "lint:js": "eslint --ext \".ts,.vue\" .",
     "lint:prettier": "prettier --check .",
     "lint": "yarn lint:js && yarn lint:prettier",
     "lintfix": "prettier --write --list-different . && yarn lint:js --fix",
-    "gen:db:types": "supabase gen types typescript --project-id hdyqjixsqoplkkeauxne > types/db.ts"
+    "gen:db:types": "pnpm supabase gen types typescript --project-id hdyqjixsqoplkkeauxne > types/db.ts"
   },
   "devDependencies": {
     "@nuxt/content": "^2.4.3",

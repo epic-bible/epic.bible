@@ -14,5 +14,6 @@ module.exports = {
   plugins: [],
   rules: {
     "vue/attribute-hyphenation": "off",
+    "vue/multi-word-component-names": "off",
   },
 };
