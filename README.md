@@ -1,6 +1,14 @@
-# Nuxt 3 Minimal Starter
+# Epic Bible Web Application
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This web application was built to make browsing and studying the scriptures easy
+
+**Deployment: https://epic.bible**
+
+**Stack**
+
+- **UI Framework**: [Nuxt 3](https://nuxt.com/)
+- **Component Library**: [Chakra UI Vue](https://next.vue.chakra-ui.com)
+- **Database**: [Postgress via Supabase](https://supabase.io)
 
 ## Setup
 
