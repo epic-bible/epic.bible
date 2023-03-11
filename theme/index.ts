@@ -4,7 +4,7 @@ import { textStyles } from "./text-styles";
 
 export const theme = extendTheme({
   fonts: {
-    body: 'IBM Plex Sans, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
+    body: 'Karla, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
   },
   colors: {
     epic: {

@@ -6,5 +6,3 @@ node_modules
 .output
 .env
 dist
-.ideas.md
-fonts

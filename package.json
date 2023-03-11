@@ -5,10 +5,15 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint:js": "eslint --ext \".ts,.vue\" --ignore-path .gitignore .",
+    "lint:prettier": "prettier --check .",
+    "lint": "yarn lint:js && yarn lint:prettier",
+    "lintfix": "prettier --write --list-different . && yarn lint:js --fix"
   },
   "devDependencies": {
     "@nuxt/content": "^2.4.3",
+    "@nuxtjs/fontaine": "^0.2.4",
     "@types/node": "^18.13.0",
     "nuxt": "^3.2.0",
     "typescript": "^4.9.5"
@@ -17,8 +22,14 @@
     "@chakra-ui/nuxt-next": "2.1.0-beta.5",
     "@chakra-ui/vue-next": "2.1.0-beta.4",
     "@chakra-ui/vue-theme-tools": "2.0.0-beta.0",
-    "@fontsource/ibm-plex-sans": "^4.5.13",
+    "@fontsource/karla": "^4.5.11",
+    "@nuxtjs/eslint-config-typescript": "^12.0.0",
+    "@typescript-eslint/parser": "^5.54.1",
     "autoprefixer": "^10.4.13",
-    "postcss": "^8.4.21"
+    "eslint": "^8.36.0",
+    "eslint-config-prettier": "^8.7.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "postcss": "^8.4.21",
+    "prettier": "^2.8.4"
   }
 }

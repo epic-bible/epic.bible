@@ -1,0 +1,8 @@
+/* @import url(./300.css); */
+@import url(./400.css);
+@import url(./600.css);
+@import url(./700.css);
+
+html {
+  font-family: 'Karla', sans-serif !important;
+}

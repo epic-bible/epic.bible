@@ -1,12 +1,9 @@
-import { epic } from '@/panda/jsx'
-import { content } from "@/panda/recipes"
+import { chakra } from "@chakra-ui/vue-next";
 
 const Markdown = defineComponent((_, { slots }) => {
   return () => (
-    <epic.main class={content()}>
-      {slots.default?.()}
-    </epic.main>
-  )
-})
+    <chakra.main class="chakra-prose">{slots.default?.()}</chakra.main>
+  );
+});
 
-export default Markdown
+export default Markdown;

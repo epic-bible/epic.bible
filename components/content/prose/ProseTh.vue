@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { chakra, useColorModeValue } from '@chakra-ui/vue-next'
+import { chakra, useColorModeValue } from "@chakra-ui/vue-next";
 
-const bg = useColorModeValue('gray.50', 'whiteAlpha.100')
+const bg = useColorModeValue("gray.50", "whiteAlpha.100");
 </script>
 
 <template>

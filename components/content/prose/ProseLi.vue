@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { CListItem } from '@chakra-ui/vue-next'
+import { CListItem } from "@chakra-ui/vue-next";
 </script>
 
 <template>

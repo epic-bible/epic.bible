@@ -28,8 +28,27 @@ export default defineNuxtConfig({
     "@nuxt/content",
     "@chakra-ui/nuxt-next",
     "@/modules/content-chunks.module.ts",
+    "@nuxtjs/fontaine",
   ],
+  css: ["@/styles/typography/all.css"],
   chakra: {
     extendTheme: theme,
+  },
+  fontMetrics: {
+    fonts: [
+      "Karla",
+      {
+        family: "Karla",
+        src: "./styles/typography/files/karla-latin-ext-400-normal.woff2",
+      },
+      {
+        family: "Karla",
+        src: "./styles/typography/files/karla-latin-ext-600-normal.woff2",
+      },
+      {
+        family: "Karla",
+        src: "./styles/typography/files/karla-latin-ext-700-normal.woff2",
+      },
+    ],
   },
 });

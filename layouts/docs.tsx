@@ -1,18 +1,16 @@
-import { NuxtLoadingIndicator } from "#components"
-import { chakra } from "@chakra-ui/vue-next"
+import { chakra, CContainer } from "@chakra-ui/vue-next";
+import { NuxtLoadingIndicator } from "#components";
 
 export default defineComponent({
   name: "DefaultLayout",
   setup(_, { slots }) {
     return () => (
-      <chakra.div minH="100vh">
-        <NuxtLoadingIndicator color="#1aff75" />
-        <chakra.div pt="24" />
-        <chakra.main>
-          {slots.default?.()}
-        </chakra.main>
-        <chakra.div pt="24" />
+      <chakra.div>
+        <CContainer minH="100vh" py={{ base: 5, sm: 9 }} mx="auto">
+          <NuxtLoadingIndicator color="#1aff75" throttle={5000} />
+          <chakra.main>{slots.default?.()}</chakra.main>
+        </CContainer>
       </chakra.div>
-    )
-  }
-})
+    );
+  },
+});

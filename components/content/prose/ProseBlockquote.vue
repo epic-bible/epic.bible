@@ -1,5 +1,5 @@
 <script setup>
-import { CAlert } from '@chakra-ui/c-alert'
+import { CAlert } from "@chakra-ui/c-alert";
 </script>
 
 <template>

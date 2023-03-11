@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { COrderedList } from '@chakra-ui/vue-next'
+import { COrderedList } from "@chakra-ui/vue-next";
 </script>
 
 <template>
