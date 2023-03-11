@@ -5,7 +5,7 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare && pnpm gen:db:types && yarn lintfix",
+    "postinstall": "nuxt prepare",
     "lint:js": "eslint --ext \".ts,.vue\" .",
     "lint:prettier": "prettier --check .",
     "lint": "yarn lint:js && yarn lint:prettier",
