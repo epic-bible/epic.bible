@@ -29,6 +29,7 @@ export default defineNuxtConfig({
     "@chakra-ui/nuxt-next",
     "@/modules/content-chunks.module.ts",
     "@nuxtjs/fontaine",
+    "@nuxtjs/supabase",
   ],
   css: ["@/styles/typography/all.css"],
   chakra: {
@@ -36,22 +37,5 @@ export default defineNuxtConfig({
   },
   experimental: {
     componentIslands: true,
-  },
-  fontMetrics: {
-    fonts: [
-      "Karla",
-      {
-        family: "Karla",
-        src: "./styles/typography/files/karla-latin-ext-400-normal.woff2",
-      },
-      {
-        family: "Karla",
-        src: "./styles/typography/files/karla-latin-ext-600-normal.woff2",
-      },
-      {
-        family: "Karla",
-        src: "./styles/typography/files/karla-latin-ext-700-normal.woff2",
-      },
-    ],
   },
 });

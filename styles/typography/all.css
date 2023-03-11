@@ -3,6 +3,11 @@
 @import url(./600.css);
 @import url(./700.css);
 
+
+:root {
+  --chakra-fonts-heading: "Karla", sans-serif !important;
+  --chakra-fonts-body: "Karla", sans-seri !important;
+}
 html {
-  font-family: "Karla", sans-serif !important;
+  font-family: var(--chakra-fonts-body);
 }

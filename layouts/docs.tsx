@@ -2,7 +2,7 @@ import { chakra, CContainer } from "@chakra-ui/vue-next";
 import { NuxtLoadingIndicator } from "#components";
 
 export default defineComponent({
-  name: "DefaultLayout",
+  name: "DocsLayout",
   setup(_, { slots }) {
     return () => (
       <chakra.div>
