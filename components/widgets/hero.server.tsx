@@ -5,7 +5,7 @@ const Hero = defineComponent({
   name: "Hero",
   setup() {
     return () => (
-      <CStack spacing={5}>
+      <CStack spacing={6}>
         <CHeading>Welcome to Epic Bible</CHeading>
         <BooksListWidget />
       </CStack>

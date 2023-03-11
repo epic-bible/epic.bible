@@ -1,36 +1,33 @@
-# About Epic Bible
+# Welcome to Epic Bible!
 
-[Return Home](/)
+Hi 👋🏽. My name is [Jonathan](https://jbakebwa.dev).
 
-Hi 👋🏽! My name is Jonathan. Welcome to Epic Bible!
+I'm building the Epic Bible Application to make it easy to study the Bible conveniently with first-class accessibility. When studying the Bible, speed of search, accessibility and a non-onbtrusive experience are all paramount to the experience of studying the Word of God.
 
-I'm building the Epic Bible Application to help me study the Bible conveniently. When studying the Word, I value speed, and accessibility when looking for scriptures.
-
-## Why you should try Epic Bible
+## Features
 
 - Beautiful, non-obtrusive user interface
 - Parallel versions view
-- Quick search for scriptures
+- Rapid search for scriptures
 - Dark and Light Mode
 
-### Why Epic Bible
-
-I love to study the scriptures. Usually I'll use my phone/tablet or physical Bible to read the scriptures. As I read, I often need to do an advanced search for a passage or reference.
-
-I'll typically turn to an online Bible to help me with this. However, most online will Bibles bombard me with ads before I can get to the scripture I want. Those extra clicks take away from the experience of studying the Word, and can be distracting.
-
-So I set out to build something that is snappy and immersinve and enjoyable to use!
-
-<br />
-
-Once I finish the above features, I may build a few personalization features:
+## Roadmap
 
 - Note taking
-- History tracking
-- Greek / Hebrew Lexicon
+- Study Journey - Visualized Scriptural History tracking
+- Greek / Hebrew Lexicons
 - Audio
 
-### Contacts
+## Open-source
 
+This application is fully [open-source](https://github.com/epic-bible) built on the following stack:
+
+- **UI Framework**: [Nuxt 3](https://nuxt.com/)
+- **Database**: [Postgress via Supabase](https://supabase.io)
+- **Component Library**: [Chakra UI Vue](https://next.vue.chakra-ui.com)
+
+## Support and Contacts
+
+- [Email](mailto:excellence@jbakebwa.dev)
 - [Twitter](https://twitter.com/codebender828)
 - [GitHub](https://github.com/codebender828)

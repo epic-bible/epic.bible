@@ -1,15 +1,19 @@
 import { chakra, CContainer } from "@chakra-ui/vue-next";
 import { NuxtLoadingIndicator } from "#components";
+import TopNavigation from "@/components/widgets/top-navigation.server";
+import BottomFooter from "@/components/widgets/footer.server";
 
 export default defineComponent({
   name: "DocsLayout",
   setup(_, { slots }) {
     return () => (
-      <chakra.div>
-        <CContainer minH="100vh" py={{ base: 5, sm: 9 }} mx="auto">
+      <chakra.div display="flex" flexDir={"column"}>
+        <TopNavigation />
+        <CContainer minH="100vh" py={5} mx="auto">
           <NuxtLoadingIndicator color="#1aff75" throttle={5000} />
-          <chakra.main>{slots.default?.()}</chakra.main>
+          <chakra.main class="chakra-prose">{slots.default?.()}</chakra.main>
         </CContainer>
+        <BottomFooter mt="auto" />
       </chakra.div>
     );
   },
