@@ -1,14 +1,17 @@
 import { CWrap, CWrapItem, CButton } from "@chakra-ui/vue-next";
-import { useSupabase } from "@/hooks/use-supabase";
 import { NuxtLink } from "#components";
+import { IBook } from "@/types/models";
 
 const BooksListWidget = defineComponent({
-  setup() {
-    const supabase = useSupabase();
-    const { data: books } = useAsyncData("books", async () => {
-      const { data } = await supabase.from("Books").select("*");
-      return data;
-    });
+  name: "BooksListWidget",
+  props: {
+    books: {
+      type: Array as PropType<IBook[]>,
+      default: () => [],
+    },
+  },
+  setup(props) {
+    const books = computed(() => props.books);
     return () => (
       <CWrap spacing={4}>
         {books.value?.map((book, i) => (

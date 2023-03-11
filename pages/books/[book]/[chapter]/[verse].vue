@@ -15,7 +15,7 @@ const scriptureRef = computed(() => {
   return `${route.params.book} ${_chapter.value}:${route.params.verse}`;
 });
 
-const { data: verse } = useAsyncData(
+const { data: verse } = await useAsyncData(
   `${route.params.book}:${route.params.chapter}:${route.params.verse}`,
   async () => {
     const { data, error } = await supabase

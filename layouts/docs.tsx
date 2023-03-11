@@ -10,7 +10,7 @@ export default defineComponent({
       <chakra.div display="flex" flexDir={"column"}>
         <TopNavigation />
         <CContainer minH="100vh" py={5} mx="auto" maxW={"3xl"}>
-          <NuxtLoadingIndicator color="#1aff75" throttle={5000} />
+          <NuxtLoadingIndicator height={5} color="#1aff75" />
           <chakra.main class="chakra-prose">{slots.default?.()}</chakra.main>
         </CContainer>
         <BottomFooter mt="auto" />

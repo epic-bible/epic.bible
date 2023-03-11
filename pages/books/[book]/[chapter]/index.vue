@@ -13,7 +13,7 @@ const supabase = useSupabase();
 const _book = computed(() => route.params.book as string);
 const _chapter = computed(() => route.params.chapter as string);
 
-const { data: verses } = useAsyncData(
+const { data: verses } = await useAsyncData(
   `${route.params.book}:${route.params.chapter}`,
   async () => {
     const { data, error } = await supabase
