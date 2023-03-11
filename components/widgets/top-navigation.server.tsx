@@ -5,7 +5,10 @@ import {
   CFlex,
   CIconButton,
   useColorMode,
+  useColorModeValue,
 } from "@chakra-ui/vue-next";
+import MoonIcon from "../icons/moon";
+import SunIcon from "../icons/sun";
 import { NuxtLink } from "#components";
 
 const TopNavigation = defineComponent({
@@ -26,11 +29,14 @@ const TopNavigation = defineComponent({
           <CHStack>
             <CIconButton
               onClick={toggleColorMode}
-              icon={"sun"}
               ariaLabel="Switch color mode"
               variant="outline"
               size="sm"
-            />
+              _hover={{ bg: "transparent" }}
+              _active={{ bg: "transparent" }}
+            >
+              {useColorModeValue(<MoonIcon />, <SunIcon />).value}
+            </CIconButton>
           </CHStack>
         </CFlex>
       </CContainer>

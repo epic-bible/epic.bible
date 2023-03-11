@@ -18,7 +18,6 @@ const BooksListWidget = defineComponent({
                 size="sm"
                 variant="outline"
                 rounded="full"
-                colroScheme={"green"}
                 _hover={{ bg: "transparent" }}
                 _active={{ bg: "transparent" }}
               >

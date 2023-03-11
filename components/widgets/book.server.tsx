@@ -31,7 +31,17 @@ const Book = defineComponent({
           <>
             <CBreadcrumb>
               <CBreadcrumbItem>
-                <chakra.a as={NuxtLink} to="/" textDecor={"none"}>
+                <chakra.a
+                  as={NuxtLink}
+                  to="/"
+                  textDecor={"none"}
+                  _hover={{
+                    textDecoration: "underline",
+                    textDecorationStyle: "dashed",
+                    textDecorationThickness: "1px",
+                    textUnderlineOffset: "3px",
+                  }}
+                >
                   KJV
                 </chakra.a>
               </CBreadcrumbItem>
@@ -40,6 +50,13 @@ const Book = defineComponent({
                   as={NuxtLink}
                   to={`/books/${encodedName.value}`}
                   textDecor={"none"}
+                  fontWeight="bold"
+                  _hover={{
+                    textDecoration: "underline",
+                    textDecorationStyle: "dashed",
+                    textDecorationThickness: "1px",
+                    textUnderlineOffset: "3px",
+                  }}
                 >
                   {props.book.name}
                 </chakra.a>

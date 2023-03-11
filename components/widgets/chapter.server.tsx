@@ -29,6 +29,8 @@ const Verses = defineComponent({
                 _hover={{
                   textDecoration: "underline",
                   textDecorationStyle: "dashed",
+                  textDecorationThickness: "1px",
+                  textUnderlineOffset: "3px",
                 }}
                 as={NuxtLink}
                 textDecor={"none"}
@@ -44,6 +46,8 @@ const Verses = defineComponent({
                 _hover={{
                   textDecoration: "underline",
                   textDecorationStyle: "dashed",
+                  textDecorationThickness: "1px",
+                  textUnderlineOffset: "3px",
                 }}
               >
                 {props.book}
@@ -69,6 +73,8 @@ const Verses = defineComponent({
                 _hover={{
                   textDecoration: "underline",
                   textDecorationStyle: "dashed",
+                  textDecorationThickness: "1px",
+                  textUnderlineOffset: "3px",
                 }}
               />
             </CHStack>
