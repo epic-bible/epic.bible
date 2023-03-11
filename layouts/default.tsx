@@ -9,7 +9,7 @@ export default defineComponent({
     return () => (
       <chakra.div minH="100vh" display="flex" flexDir={"column"}>
         <TopNavigation />
-        <CContainer py={5} mx="auto">
+        <CContainer py={5} mx="auto" maxW={"3xl"}>
           <NuxtLoadingIndicator color="#1aff75" />
           <chakra.main>{slots.default?.()}</chakra.main>
         </CContainer>

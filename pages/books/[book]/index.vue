@@ -23,4 +23,14 @@ const { data: book } = useAsyncData(`book:${route.params.book}`, async () => {
 definePageMeta({
   layout: "default",
 });
+
+useHead({
+  title: "Epic Bible - Books",
+  meta: [
+    {
+      name: "description",
+      content: "Fast, Fearless, and Free Bible Study",
+    },
+  ],
+});
 </script>

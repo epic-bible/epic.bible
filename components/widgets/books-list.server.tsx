@@ -15,7 +15,7 @@ const BooksListWidget = defineComponent({
           <CWrapItem key={i}>
             <NuxtLink to={`/books/${book.name}`}>
               <CButton
-                size="sm"
+                size="md"
                 variant="outline"
                 rounded="full"
                 _hover={{ bg: "transparent" }}
