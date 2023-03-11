@@ -34,6 +34,9 @@ export default defineNuxtConfig({
   chakra: {
     extendTheme: theme,
   },
+  experimental: {
+    componentIslands: true,
+  },
   fontMetrics: {
     fonts: [
       "Karla",

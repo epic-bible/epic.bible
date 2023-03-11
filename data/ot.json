@@ -1,0 +1,158 @@
+[
+  {
+    "name": "Genesis",
+    "aliases": ["Gen"]
+  },
+  {
+    "name": "Exodus",
+    "aliases": ["Exod", "Ex", "Exo"]
+  },
+  {
+    "name": "Leviticus",
+    "aliases": ["Lev"]
+  },
+  {
+    "name": "Numbers",
+    "aliases": ["Num", "Nm"]
+  },
+  {
+    "name": "Deuteronomy",
+    "aliases": ["Deut", "Dt"]
+  },
+  {
+    "name": "Joshua",
+    "aliases": ["Josh"]
+  },
+  {
+    "name": "Judges",
+    "aliases": ["Judg"]
+  },
+  {
+    "name": "Ruth",
+    "aliases": ["Rth"]
+  },
+  {
+    "name": "1 Samuel",
+    "aliases": ["1 Sam", "1st Sam", "1st Samuel", "First Samuel"]
+  },
+  {
+    "name": "2 Samuel",
+    "aliases": ["2 Sam", "2nd Sam", "2nd Samuel", "Second Samuel"]
+  },
+  {
+    "name": "1 Kings",
+    "aliases": ["1 Kgs", "1 Kg", "1st Kgs", "1st Kings", "First Kings"]
+  },
+  {
+    "name": "2 Kings",
+    "aliases": ["2 Kgs", "2 Kg", "2nd Kgs", "2nd Kings", "Second Kings"]
+  },
+  {
+    "name": "1 Chronicles",
+    "aliases": ["1 Chr", "1st Chr", "1st Chronicles", "First Chronicles"]
+  },
+  {
+    "name": "2 Chronicles",
+    "aliases": ["2 Chr", "2nd Chr", "2nd Chronicles", "Second Chronicles"]
+  },
+  {
+    "name": "Ezra",
+    "aliases": ["Ezra", "Ez"]
+  },
+  {
+    "name": "Nehemiah",
+    "aliases": ["Neh"]
+  },
+  {
+    "name": "Esther",
+    "aliases": ["Esth", "Est"]
+  },
+  {
+    "name": "Job",
+    "aliases": ["Jb"]
+  },
+  {
+    "name": "Psalms",
+    "aliases": ["Ps", "Psalm"]
+  },
+  {
+    "name": "Proverbs",
+    "aliases": ["Prov", "Pro"]
+  },
+  {
+    "name": "Ecclesiastes",
+    "aliases": ["Eccl", "Ecc"]
+  },
+  {
+    "name": "Song of Solomon",
+    "aliases": ["Song", "Song of Songs"]
+  },
+  {
+    "name": "Isaiah",
+    "aliases": ["Isa", "Is"]
+  },
+  {
+    "name": "Jeremiah",
+    "aliases": ["Jer"]
+  },
+  {
+    "name": "Lamentations",
+    "aliases": ["Lam"]
+  },
+  {
+    "name": "Ezekiel",
+    "aliases": ["Ezek"]
+  },
+  {
+    "name": "Daniel",
+    "aliases": ["Dan"]
+  },
+  {
+    "name": "Hosea",
+    "aliases": ["Hos"]
+  },
+  {
+    "name": "Joel",
+    "aliases": ["Jo"]
+  },
+  {
+    "name": "Amos",
+    "aliases": ["Am"]
+  },
+  {
+    "name": "Obadiah",
+    "aliases": ["Obad", "Oba"]
+  },
+  {
+    "name": "Jonah",
+    "aliases": ["Jon"]
+  },
+  {
+    "name": "Micah",
+    "aliases": ["Mic"]
+  },
+  {
+    "name": "Nahum",
+    "aliases": ["Nah"]
+  },
+  {
+    "name": "Habakkuk",
+    "aliases": ["Hab"]
+  },
+  {
+    "name": "Zephaniah",
+    "aliases": ["Zeph"]
+  },
+  {
+    "name": "Haggai",
+    "aliases": ["Hag"]
+  },
+  {
+    "name": "Zechariah",
+    "aliases": ["Zech"]
+  },
+  {
+    "name": "Malachi",
+    "aliases": ["Mal"]
+  }
+]

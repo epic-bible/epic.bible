@@ -8,12 +8,15 @@ specifiers:
   '@nuxt/content': ^2.4.3
   '@nuxtjs/eslint-config-typescript': ^12.0.0
   '@nuxtjs/fontaine': ^0.2.4
+  '@types/lodash-es': ^4.17.6
   '@types/node': ^18.13.0
   '@typescript-eslint/parser': ^5.54.1
   autoprefixer: ^10.4.13
+  consola: ^2.15.3
   eslint: ^8.36.0
   eslint-config-prettier: ^8.7.0
   eslint-plugin-prettier: ^4.2.1
+  lodash-es: ^4.17.21
   nuxt: ^3.2.0
   postcss: ^8.4.21
   prettier: ^2.8.4
@@ -25,11 +28,14 @@ dependencies:
   '@chakra-ui/vue-theme-tools': 2.0.0-beta.0
   '@fontsource/karla': 4.5.11
   '@nuxtjs/eslint-config-typescript': 12.0.0_vgl77cfdswitgr47lm5swmv43m
+  '@types/lodash-es': 4.17.6
   '@typescript-eslint/parser': 5.54.1_vgl77cfdswitgr47lm5swmv43m
   autoprefixer: 10.4.13_postcss@8.4.21
+  consola: 2.15.3
   eslint: 8.36.0
   eslint-config-prettier: 8.7.0_eslint@8.36.0
   eslint-plugin-prettier: 4.2.1_eqzx3hpkgx5nnvxls3azrcc7dm
+  lodash-es: 4.17.21
   postcss: 8.4.21
   prettier: 2.8.4
 
@@ -2954,6 +2960,12 @@ packages:
 
   /@types/json5/0.0.29:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
+    dev: false
+
+  /@types/lodash-es/4.17.6:
+    resolution: {integrity: sha512-R+zTeVUKDdfoRxpAryaQNRKk3105Rrgx2CFRClIgRGaqDTdjsm8h6IYA8ir584W3ePzkZfst5xIgDwYrlh9HLg==}
+    dependencies:
+      '@types/lodash': 4.14.191
     dev: false
 
   /@types/lodash.camelcase/4.3.7:
@@ -6201,6 +6213,10 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       p-locate: 5.0.0
+
+  /lodash-es/4.17.21:
+    resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==}
+    dev: false
 
   /lodash._reinterpolate/3.0.0:
     resolution: {integrity: sha512-xYHt68QRoYGjeeM/XOE1uJtvXQAgvszfBhjV4yvsQH0u2i9I6cI6c6/eG4Hh3UAOVn0y/xAXwmTzEay49Q//HA==}

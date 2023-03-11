@@ -24,11 +24,14 @@
     "@chakra-ui/vue-theme-tools": "2.0.0-beta.0",
     "@fontsource/karla": "^4.5.11",
     "@nuxtjs/eslint-config-typescript": "^12.0.0",
+    "@types/lodash-es": "^4.17.6",
     "@typescript-eslint/parser": "^5.54.1",
     "autoprefixer": "^10.4.13",
+    "consola": "^2.15.3",
     "eslint": "^8.36.0",
     "eslint-config-prettier": "^8.7.0",
     "eslint-plugin-prettier": "^4.2.1",
+    "lodash-es": "^4.17.21",
     "postcss": "^8.4.21",
     "prettier": "^2.8.4"
   }
