@@ -18,14 +18,14 @@ export async function generatePrerenderRoutes() {
   }, [] as string[]);
 
   consola.info(
-    "Prerendering routes:",
+    "Prerendering book routes and chapter routes:",
     JSON.stringify(["/", ...bookRoutes], null, 2),
-    `Ignoring ${chapterRoutes.length} chapter routes from ${bookRoutes.length} books.}`
+    `Including ${chapterRoutes.length} chapter routes from ${bookRoutes.length} books.}`
   );
 
   writeFileSync(
     resolve(__dirname, "../.prerender/routes.json"),
-    JSON.stringify(["/", ...bookRoutes], null, 2)
+    JSON.stringify(["/", ...bookRoutes, ...chapterRoutes], null, 2)
   );
 }
 
