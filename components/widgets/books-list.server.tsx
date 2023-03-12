@@ -16,17 +16,17 @@ const BooksListWidget = defineComponent({
       <CWrap spacing={4}>
         {books.value?.map((book, i) => (
           <CWrapItem key={i}>
-            <NuxtLink to={`/books/${book.name}`}>
-              <CButton
-                size="md"
-                variant="outline"
-                rounded="full"
-                _hover={{ bg: "transparent" }}
-                _active={{ bg: "transparent" }}
-              >
-                {book.name}
-              </CButton>
-            </NuxtLink>
+            <CButton
+              as={NuxtLink}
+              to={`/books/${book.name}`}
+              size="md"
+              variant="outline"
+              rounded="full"
+              _hover={{ bg: "transparent" }}
+              _active={{ bg: "transparent" }}
+            >
+              {book.name}
+            </CButton>
           </CWrapItem>
         ))}
       </CWrap>

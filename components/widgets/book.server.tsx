@@ -66,22 +66,22 @@ const Book = defineComponent({
         )}
         {props.book && (
           <>
-            <CHeading>{props.book?.name}</CHeading>
+            <CHeading as="h1">{props.book?.name}</CHeading>
             <CWrap spacing={6}>
               {chapters.value?.map((chapter) => (
                 <CWrapItem key={chapter}>
-                  <NuxtLink to={`/books/${props.book?.name}/${chapter}`}>
-                    <CIconButton
-                      variant="outline"
-                      rounded="none"
-                      size="lg"
-                      ariaLabel={`Chapter ${chapter}`}
-                      _hover={{ bg: "transparent" }}
-                      _active={{ bg: "transparent" }}
-                    >
-                      {chapter}
-                    </CIconButton>
-                  </NuxtLink>
+                  <CIconButton
+                    as={NuxtLink}
+                    to={`/books/${props.book?.name}/${chapter}`}
+                    variant="outline"
+                    rounded="none"
+                    size="lg"
+                    ariaLabel={`Chapter ${chapter}`}
+                    _hover={{ bg: "transparent" }}
+                    _active={{ bg: "transparent" }}
+                  >
+                    {chapter}
+                  </CIconButton>
                 </CWrapItem>
               ))}
             </CWrap>

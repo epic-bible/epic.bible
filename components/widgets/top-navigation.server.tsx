@@ -19,12 +19,22 @@ const TopNavigation = defineComponent({
       <CContainer py={5} maxW={"3xl"}>
         <CFlex justifyContent={"space-between"}>
           <CHStack spacing={5}>
-            <NuxtLink class="anchor" to="/">
-              <chakra.p fontWeight={"bold"}>Home</chakra.p>
-            </NuxtLink>
-            <NuxtLink class="anchor" to="/about">
-              <chakra.p fontWeight={"bold"}>About</chakra.p>
-            </NuxtLink>
+            <chakra.p
+              as={NuxtLink}
+              textStyle="anchor"
+              to="/"
+              fontWeight={"bold"}
+            >
+              Home
+            </chakra.p>
+            <chakra.p
+              as={NuxtLink}
+              textStyle="anchor"
+              to="/about"
+              fontWeight={"bold"}
+            >
+              About
+            </chakra.p>
           </CHStack>
           <CHStack>
             <CIconButton
@@ -34,6 +44,7 @@ const TopNavigation = defineComponent({
               size="sm"
               _hover={{ bg: "transparent" }}
               _active={{ bg: "transparent" }}
+              type="button"
             >
               {useColorModeValue(<MoonIcon />, <SunIcon />).value}
             </CIconButton>

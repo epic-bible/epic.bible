@@ -5,6 +5,9 @@ import { theme } from "./theme";
 export default defineNuxtConfig({
   app: {
     head: {
+      htmlAttrs: {
+        lang: "en",
+      },
       meta: [
         {
           name: "viewport",
@@ -25,12 +28,15 @@ export default defineNuxtConfig({
       ],
     },
   },
+  // @ts-ignore
   modules: [
     "@nuxt/content",
     "@chakra-ui/nuxt-next",
     "@/modules/content-chunks.module.ts",
     "@nuxtjs/fontaine",
     "@nuxtjs/supabase",
+    "@nuxtjs/html-validator",
+    "nuxt-time",
   ],
   css: ["@/styles/typography/all.css"],
   chakra: {

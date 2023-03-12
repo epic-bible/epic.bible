@@ -60,7 +60,7 @@ const Verses = defineComponent({
             </CBreadcrumbItem>
           </CBreadcrumb>
         )}
-        <CHeading>{bookAndChapter.value}</CHeading>
+        <CHeading as="h1">{bookAndChapter.value}</CHeading>
         {verses.value?.map((verse) => (
           <NuxtLink
             key={verse.ref}

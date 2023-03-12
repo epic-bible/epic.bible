@@ -9,7 +9,7 @@ import {
   CIconButton,
   CStack,
 } from "@chakra-ui/vue-next";
-import { PropType } from "vue";
+import { PropType, shallowRef } from "vue";
 import CopyIcon from "../icons/copy";
 import CopyCheckIcon from "../icons/copy-check";
 import LinkIcon from "../icons/link";
@@ -26,8 +26,8 @@ const Verse = defineComponent({
     const bookAndChapter = computed(
       () => `${props.verse?.book} ${props.verse?.chapter}`
     );
-    const Copy = ref(CopyIcon);
-    const Share = ref(LinkIcon);
+    const Copy = shallowRef(CopyIcon);
+    const Share = shallowRef(LinkIcon);
 
     async function copyVerse(text: string) {
       await navigator.clipboard.writeText(text);
@@ -101,7 +101,6 @@ const Verse = defineComponent({
                 rounded="lg"
                 _hover={{ bg: "transparent" }}
                 _active={{ bg: "transparent" }}
-                icon={<Copy.value />}
                 ariaLabel="Copy"
                 color="currentcolor"
                 onClick={() =>
@@ -111,18 +110,21 @@ const Verse = defineComponent({
                     }`
                   )
                 }
-              />
+              >
+                <Copy.value />
+              </CIconButton>
               <CIconButton
                 rounded="lg"
                 _hover={{ bg: "transparent" }}
                 _active={{ bg: "transparent" }}
-                icon={<Share.value />}
                 ariaLabel="Share"
                 color="currentcolor"
                 onClick={() =>
                   copyLink(canUseDOM() ? window.location.href : "")
                 }
-              />
+              >
+                <Share.value />
+              </CIconButton>
             </CButtonGroup>
           </CStack>
         )}
