@@ -72,7 +72,9 @@ const Book = defineComponent({
                 <CWrapItem key={chapter}>
                   <CIconButton
                     as={NuxtLink}
-                    to={`/books/${props.book?.name}/${chapter}`}
+                    to={`/books/${encodeURIComponent(
+                      encodedName.value
+                    )}/${chapter}`}
                     variant="outline"
                     rounded="none"
                     size="lg"

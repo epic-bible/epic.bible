@@ -64,7 +64,9 @@ const Verses = defineComponent({
         {verses.value?.map((verse) => (
           <NuxtLink
             key={verse.ref}
-            to={`/books/${verse.book}/${verse.chapter}/${verse.verse}`}
+            to={`/books/${encodeURIComponent(verse.book)}/${verse.chapter}/${
+              verse.verse
+            }`}
           >
             <CHStack fontSize={"lg"}>
               <chakra.sup mt={4}>{verse.verse}</chakra.sup>

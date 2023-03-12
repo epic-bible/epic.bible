@@ -18,7 +18,7 @@ const BooksListWidget = defineComponent({
           <CWrapItem key={i}>
             <CButton
               as={NuxtLink}
-              to={`/books/${book.name}`}
+              to={`/books/${encodeURIComponent(book.name)}`}
               size="md"
               variant="outline"
               rounded="full"
