@@ -1,5 +1,6 @@
 import { extendTheme } from "@chakra-ui/vue-next";
 import { theme } from "./theme";
+import routes from "./.prerender/routes.json";
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -47,7 +48,7 @@ export default defineNuxtConfig({
   },
   nitro: {
     prerender: {
-      routes: ["/", "/about"],
+      routes,
     },
   },
 });

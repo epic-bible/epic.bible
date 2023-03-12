@@ -9,8 +9,10 @@ specifiers:
   '@nuxtjs/fontaine': ^0.2.4
   '@nuxtjs/html-validator': ^1.2.4
   '@nuxtjs/supabase': ^0.3.1
+  '@types/dotenv-defaults': ^2.0.1
   '@types/node': ^18.13.0
   '@typescript-eslint/parser': ^5.54.1
+  dotenv-defaults: ^5.0.2
   eslint: ^8.36.0
   eslint-config-prettier: ^8.7.0
   eslint-plugin-prettier: ^4.2.1
@@ -25,6 +27,8 @@ dependencies:
   '@chakra-ui/vue-theme-tools': 2.0.0-beta.0
   '@nuxtjs/html-validator': 1.2.4
   '@nuxtjs/supabase': 0.3.1
+  '@types/dotenv-defaults': 2.0.1
+  dotenv-defaults: 5.0.2
 
 devDependencies:
   '@nuxt/content': 2.4.3
@@ -3130,6 +3134,12 @@ packages:
       '@types/ms': 0.7.31
     dev: true
 
+  /@types/dotenv-defaults/2.0.1:
+    resolution: {integrity: sha512-pH/45waKTwuwGszC893XdP9Dnj4LFtjranprQ7v3j6j4HdDyrhSF1ybHHWxZ2qp6KIrabN7zG3HeV4Y7OUVnww==}
+    dependencies:
+      dotenv: 8.6.0
+    dev: false
+
   /@types/estree/1.0.0:
     resolution: {integrity: sha512-WulqXMDUTYAXCjZnk6JtIHPigp55cVtDgDrO2gHRwhyJto21+1zbVCtOYB2L1F9w4qCQ0rOGWBnBe0FNTiEJIQ==}
 
@@ -4779,9 +4789,25 @@ packages:
       type-fest: 2.19.0
     dev: true
 
+  /dotenv-defaults/5.0.2:
+    resolution: {integrity: sha512-y5z4NhblzwNk8XBIYVzjLcFkANK0rxbRDO6kGOfH9QrVYIGVEX52IqwSprKVsaLHM9pnNkCSxazZF/JPydDPvA==}
+    dependencies:
+      dotenv: 14.3.2
+    dev: false
+
+  /dotenv/14.3.2:
+    resolution: {integrity: sha512-vwEppIphpFdvaMCaHfCEv9IgwcxMljMw2TnAQBB4VWPvzXQLTb82jwmdOKzlEVUL3gNFT4l4TPKO+Bn+sqcrVQ==}
+    engines: {node: '>=12'}
+    dev: false
+
   /dotenv/16.0.3:
     resolution: {integrity: sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==}
     engines: {node: '>=12'}
+
+  /dotenv/8.6.0:
+    resolution: {integrity: sha512-IrPdXQsk2BbzvCBGBOTmmSH5SodmqZNt4ERAZDmW4CT+tL8VtvinqywuANaFu4bOMWki16nqf0e4oC0QIaDr/g==}
+    engines: {node: '>=10'}
+    dev: false
 
   /duplexer/0.1.2:
     resolution: {integrity: sha512-jtD6YG370ZCIi/9GTaJKQxWTZD045+4R4hTk/x1UyoqadyJ9x9CgSi1RlVDQF8U2sxLLSnFkCaMihqljHIWgMg==}
