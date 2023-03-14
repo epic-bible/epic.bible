@@ -35,7 +35,7 @@ export default defineNuxtConfig({
     "@/modules/content-chunks.module.ts",
     "@nuxtjs/fontaine",
     "@nuxtjs/supabase",
-    "@nuxtjs/html-validator",
+    // "@nuxtjs/html-validator",
     "nuxt-time",
   ],
   css: ["@/styles/typography/all.css"],
