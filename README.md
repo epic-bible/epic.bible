@@ -10,6 +10,10 @@ This web application was built to make browsing and studying the scriptures easy
 - **Component Library**: [Chakra UI Vue](https://next.vue.chakra-ui.com)
 - **Database**: [Postgress via Supabase](https://supabase.io)
 
+### Community
+Join the [Epic Bible Discord](https://discord.com/invite/NdhVc5etDM)
+
+
 ## Setup
 
 Make sure to install the dependencies:
