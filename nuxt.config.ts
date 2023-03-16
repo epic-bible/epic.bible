@@ -20,7 +20,15 @@ export default defineNuxtConfig({
       script: [
         {
           async: true,
+          defer: true,
           src: "https://www.googletagmanager.com/gtag/js?id=G-QB86KZMPFJ",
+        },
+        {
+          async: true,
+          defer: true,
+          src: "https://api.pirsch.io/pirsch.js",
+          id: "pirschjs",
+          "data-code": "fm1Mkpbody7mVpqMbU81ROeuvQfnjuHj",
         },
         {
           src: "/ga.js",

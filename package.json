@@ -17,6 +17,7 @@
     "@nuxt/content": "^2.4.3",
     "@nuxtjs/eslint-config-typescript": "^12.0.0",
     "@nuxtjs/fontaine": "^0.2.4",
+    "@nuxtjs/plausible": "^0.2.0",
     "@types/node": "^18.13.0",
     "@typescript-eslint/parser": "^5.54.1",
     "eslint": "^8.36.0",
