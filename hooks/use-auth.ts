@@ -15,9 +15,17 @@ export function useAuth() {
     }
   }
 
+  async function logout() {
+    const { error } = await client.auth.signOut();
+    if (error) {
+      console.log(error);
+    }
+  }
+
   return {
     user,
     isAuthenticated: !!user.value,
     login,
+    logout,
   };
 }

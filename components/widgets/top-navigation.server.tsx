@@ -9,6 +9,7 @@ import {
   CButton,
   CAvatar,
   CText,
+  CTooltip,
 } from "@chakra-ui/vue-next";
 import MoonIcon from "../icons/moon";
 import SunIcon from "../icons/sun";
@@ -20,7 +21,7 @@ const TopNavigation = defineComponent({
   setup() {
     const { toggleColorMode } = useColorMode();
 
-    const { login, user } = useAuth();
+    const { login, user, logout } = useAuth();
 
     return () => (
       <CContainer py={5} maxW={"3xl"}>
@@ -48,24 +49,29 @@ const TopNavigation = defineComponent({
               onClick={toggleColorMode}
               ariaLabel="Switch color mode"
               type="button"
-              size="sm"
-              variant="outline"
-              _hover={{ bg: "transparent" }}
-              _active={{ bg: "transparent" }}
             >
               {useColorModeValue(<MoonIcon />, <SunIcon />).value}
             </CIconButton>
             {user?.value ? (
               <>
-                <CHStack alignItems={"center"}>
-                  <CAvatar
-                    size={"sm"}
-                    name={user.value.name}
-                    src={user.value.avatar_url}
-                    referrerpolicy="no-referrer"
-                  />
-                  <CText>{user.value.name}</CText>
-                </CHStack>
+                <CTooltip placement="bottom" hasArrow label="Logout">
+                  <CButton
+                    variant={"ghost"}
+                    _hover={{ bg: "transparent" }}
+                    _active={{ bg: "transparent" }}
+                    onClick={logout}
+                  >
+                    <CHStack alignItems={"center"}>
+                      <CAvatar
+                        size={"sm"}
+                        name={user.value.name}
+                        src={user.value.avatar_url}
+                        referrerpolicy="no-referrer"
+                      />
+                      <CText>{user.value.name}</CText>
+                    </CHStack>
+                  </CButton>
+                </CTooltip>
               </>
             ) : (
               <CButton size="sm" type="button" onClick={login}>
