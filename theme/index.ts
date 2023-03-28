@@ -1,6 +1,7 @@
 import { extendTheme } from "@chakra-ui/vue-next";
 import { globalStyles } from "./global-styles";
 import { textStyles } from "./text-styles";
+import * as components from "./components";
 
 export const theme = extendTheme({
   fonts: {
@@ -23,6 +24,7 @@ export const theme = extendTheme({
   styles: {
     global: globalStyles,
   },
+  components,
   config: {
     initialColorMode: "light",
   },
