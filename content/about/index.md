@@ -31,3 +31,8 @@ This application is fully [open-source](https://github.com/epic-bible) built on 
 - [Email](mailto:excellence@jbakebwa.dev)
 - [Twitter](https://twitter.com/codebender828)
 - [GitHub](https://github.com/codebender828)
+
+### Documents
+
+- [Privacy Policy](/about/privacy-policy)
+- [Terms of Service](/about/terms-of-service)
