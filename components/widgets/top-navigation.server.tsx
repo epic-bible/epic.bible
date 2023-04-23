@@ -30,6 +30,7 @@ const TopNavigation = defineComponent({
             <chakra.p
               as={NuxtLink}
               textStyle="anchor"
+              // @ts-expect-error to attribute
               to="/"
               fontWeight={"bold"}
             >
@@ -38,6 +39,7 @@ const TopNavigation = defineComponent({
             <chakra.p
               as={NuxtLink}
               textStyle="anchor"
+              // @ts-expect-error to attribute
               to="/about"
               fontWeight={"bold"}
             >
@@ -60,12 +62,14 @@ const TopNavigation = defineComponent({
                     _hover={{ bg: "transparent" }}
                     _active={{ bg: "transparent" }}
                     onClick={logout}
+                    type="button"
                   >
-                    <CHStack alignItems={"center"}>
+                    <CHStack as="span" alignItems={"center"}>
                       <CAvatar
                         size={"sm"}
                         name={user.value.name}
                         src={user.value.avatar_url}
+                        // @ts-expect-error referrerpolicy is not included in IntrinsicAttributes
                         referrerpolicy="no-referrer"
                       />
                       <CText>{user.value.name}</CText>

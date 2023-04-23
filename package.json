@@ -23,7 +23,7 @@
     "eslint": "^8.36.0",
     "eslint-config-prettier": "^8.7.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "nuxt": "^3.2.0",
+    "nuxt": "^3.4.1",
     "nuxt-time": "^0.0.3",
     "prettier": "^2.8.4",
     "typescript": "^4.9.5"
@@ -35,6 +35,7 @@
     "@nuxtjs/html-validator": "^1.2.4",
     "@nuxtjs/supabase": "^0.3.1",
     "@types/dotenv-defaults": "^2.0.1",
+    "consola": "^3.0.1",
     "dotenv-defaults": "^5.0.2"
   }
 }

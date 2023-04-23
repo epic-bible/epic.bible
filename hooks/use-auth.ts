@@ -3,6 +3,7 @@ import type { Database } from "@/types/db";
 export function useAuth() {
   const supabaseUser = useSupabaseUser();
   const client = useSupabaseAuthClient<Database>();
+  const router = useRouter();
 
   const user = computed(() => supabaseUser.value?.user_metadata);
 
@@ -11,7 +12,7 @@ export function useAuth() {
       provider: "google",
     });
     if (error) {
-      console.log(error);
+      console.error(error);
     }
   }
 
