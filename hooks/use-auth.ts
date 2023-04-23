@@ -14,6 +14,8 @@ export function useAuth() {
     if (error) {
       console.error(error);
     }
+
+    await router.push("/");
   }
 
   async function logout() {
