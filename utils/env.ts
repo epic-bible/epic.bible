@@ -1,5 +1,1 @@
-import { config } from "dotenv-defaults";
-
-config({
-  path: ".env",
-});
+export const __DEV__ = process.env.NODE_ENV === "development";

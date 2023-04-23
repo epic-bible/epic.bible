@@ -1,4 +1,4 @@
-import "../utils/env";
+import "../utils/dotenv";
 import { writeFileSync } from "fs";
 import { resolve } from "path";
 import consola from "consola";
