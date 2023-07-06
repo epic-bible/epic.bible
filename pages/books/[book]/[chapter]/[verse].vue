@@ -3,7 +3,7 @@
 </template>
 
 <script setup lang="ts">
-import Verse from "@/components/widgets/verse.server";
+import Verse from "@/components/widgets/verse.server.vue";
 import { useSupabase } from "@/hooks/use-supabase";
 
 const route = useRoute();

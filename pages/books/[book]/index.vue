@@ -3,7 +3,7 @@
 </template>
 
 <script setup lang="ts">
-import Book from "@/components/widgets/book.server";
+import Book from "@/components/widgets/book.server.vue";
 import { useSupabase } from "@/hooks/use-supabase";
 
 const route = useRoute();

@@ -3,7 +3,7 @@
 </template>
 
 <script setup lang="ts">
-import Chapter from "@/components/widgets/chapter.server";
+import Chapter from "@/components/widgets/chapter.server.vue";
 import { useSupabase } from "@/hooks/use-supabase";
 
 const route = useRoute();
