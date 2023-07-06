@@ -28,6 +28,19 @@ const { data: verse } = await useAsyncData(
   }
 );
 
+// const { data: verses } = await useAsyncData(
+//   `${route.params.book}:${route.params.chapter}`,
+//   async () => {
+//     const { data, error } = await supabase
+//       .from("Verses")
+//       .select("*")
+//       .eq("book", route.params.book)
+//       .eq("chapter", _chapter.value);
+//     if (error) throw error;
+//     else return data! || [];
+//   }
+// );
+
 useHead({
   title: `${scriptureRef.value} | Epic Bible`,
   meta: [

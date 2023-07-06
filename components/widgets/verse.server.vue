@@ -14,12 +14,16 @@ import { shallowRef } from "vue";
 import CopyIcon from "../icons/copy";
 import CopyCheckIcon from "../icons/copy-check";
 import LinkIcon from "../icons/link";
+import { useKeyboardShortcuts } from "../../composables/use-keyboard-shortcuts";
+import { useSupabase } from "@/hooks/use-supabase";
 import { IVerses } from "@/types/models";
 import { NuxtLink } from "#components";
 
 const props = defineProps<{
   verse: IVerses | null;
 }>();
+
+const supabase = useSupabase();
 
 const pageTitle = computed(() => `${props.verse?.ref} ${props.verse?._v}`);
 const bookAndChapter = computed(
@@ -44,6 +48,70 @@ async function copyLink(text: string) {
 }
 
 const __location = () => (canUseDOM() ? window.location.href : "");
+
+const res = await useAsyncData(
+  `${props.verse?.book}:${props.verse?.chapter}`,
+  async () => {
+    const { data, error } = await supabase
+      .from("Verses")
+      .select("id", { count: "exact" })
+      .eq("book", props.verse?.book)
+      .eq("chapter", props.verse?.chapter);
+    if (error) throw error;
+    else return data! || [];
+  }
+);
+
+const chapterLength = computed(() => res.data.value?.length || 0);
+
+const router = useRouter();
+useKeyboardShortcuts({
+  ArrowRight: () =>
+    router.replace({
+      params: {
+        book: props.verse?.book,
+        chapter: props.verse?.chapter,
+        // increment props.verse.verse by one if the next verse does not exceed chapter
+        verse:
+          props.verse!.verse + 1 <= chapterLength.value
+            ? props.verse!.verse + 1
+            : props.verse!.verse,
+      },
+    }),
+  ArrowLeft: () =>
+    router.replace({
+      params: {
+        book: props.verse?.book,
+        chapter: props.verse?.chapter,
+        verse:
+          props.verse!.verse - 1 >= 1
+            ? props.verse!.verse - 1
+            : props.verse!.verse,
+      },
+    }),
+  ArrowUp: () =>
+    router.replace({
+      params: {
+        book: props.verse?.book,
+        chapter: props.verse?.chapter,
+        verse:
+          props.verse!.verse - 1 >= 1
+            ? props.verse!.verse - 1
+            : props.verse!.verse,
+      },
+    }),
+  ArrowDown: () =>
+    router.replace({
+      params: {
+        book: props.verse?.book,
+        chapter: props.verse?.chapter,
+        verse:
+          props.verse!.verse + 1 <= chapterLength.value!
+            ? props.verse!.verse + 1
+            : props.verse!.verse,
+      },
+    }),
+});
 </script>
 
 <template>

@@ -37,6 +37,7 @@
     "@types/dotenv-defaults": "^2.0.1",
     "consola": "^3.2.2",
     "dotenv-defaults": "^5.0.2",
+    "tinykeys": "^2.1.0",
     "vue": "^3.3.4"
   }
 }
