@@ -36,6 +36,7 @@ export default defineNuxtConfig({
       ],
     },
   },
+
   // @ts-ignore
   modules: [
     "@nuxt/content",
@@ -45,16 +46,36 @@ export default defineNuxtConfig({
     "@nuxtjs/supabase",
     "@nuxtjs/html-validator",
     "nuxt-time",
+    "@nuxtjs/tailwindcss",
+    "shadcn-nuxt",
   ],
+
   css: ["@/styles/typography/all.css"],
+
   chakra: {
     extendTheme: extendTheme(theme),
   },
+
   experimental: {
     componentIslands: true,
     typedPages: true,
   },
+
   build: {
     transpile: ["tinykeys"],
   },
+
+  shadcn: {
+    /**
+     * Prefix for all the imported component
+     */
+    prefix: "",
+    /**
+     * Directory that the component lives in.
+     * @default "./components/ui"
+     */
+    componentDir: "./components/ui",
+  },
+
+  compatibilityDate: "2024-08-17",
 });
