@@ -1,5 +1,5 @@
 <template>
-  <chakra.h2 text-style="display.md" mt="12" mb="3">
+  <h2 class="mb-3 mt-12 text-3xl font-semibold tracking-tight">
     <slot />
-  </chakra.h2>
+  </h2>
 </template>

@@ -3,7 +3,7 @@
 </template>
 
 <script setup lang="ts">
-import Hero from "@/components/widgets/hero.server";
+import Hero from "@/components/widgets/hero.vue";
 import { useSupabase } from "@/hooks/use-supabase";
 
 useHead({

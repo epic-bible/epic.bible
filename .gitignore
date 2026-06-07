@@ -8,3 +8,6 @@ node_modules
 dist
 .ideas.md
 fonts
+.claude
+.DS_Store
+.vercel

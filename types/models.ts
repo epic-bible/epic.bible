@@ -1,4 +1,4 @@
-import { Database } from "./db";
+import type { Database } from "./db";
 
 export type IBook = Database["public"]["Tables"]["Books"]["Row"];
 export type IBibles = Database["public"]["Tables"]["Bibles"]["Row"];

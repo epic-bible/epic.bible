@@ -1,9 +1,9 @@
 <template>
-  <Verse :verse="verse" />
+  <Verse :verse="verse ?? null" />
 </template>
 
 <script setup lang="ts">
-import Verse from "@/components/widgets/verse.server.vue";
+import Verse from "@/components/widgets/verse.vue";
 import { useSupabase } from "@/hooks/use-supabase";
 
 const route = useRoute();

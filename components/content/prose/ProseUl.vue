@@ -1,9 +1,5 @@
-<script setup lang="ts">
-import { CUnorderedList } from "@chakra-ui/vue-next";
-</script>
-
 <template>
-  <CUnorderedList>
+  <ul class="my-4 list-disc pl-6">
     <slot />
-  </CUnorderedList>
+  </ul>
 </template>

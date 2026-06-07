@@ -60,11 +60,14 @@ export default defineNuxtModule({
     });
 
     nuxt.hook("vite:extendConfig", (config, { isServer }) => {
-      config.build ||= {};
-      config.build.rollupOptions ||= {};
-      config.build.rollupOptions.output ||= {};
-      if (Array.isArray(config.build.rollupOptions.output) || isServer) return;
-      config.build.rollupOptions.output.manualChunks = (id) => {
+      // Vite's UserConfig types `build` read-only; mutating in place is the
+      // expected pattern inside Nuxt's vite:extendConfig hook.
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const build = ((config as any).build ||= {});
+      const rollupOptions = (build.rollupOptions ||= {});
+      const output = (rollupOptions.output ||= {});
+      if (Array.isArray(output) || isServer) return;
+      output.manualChunks = (id: string) => {
         if (
           (id.includes("@nuxt/content") || id.includes("ProseImg")) &&
           dirs.some((dir) => id.includes(dir))

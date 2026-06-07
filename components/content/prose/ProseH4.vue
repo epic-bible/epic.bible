@@ -1,5 +1,5 @@
 <template>
-  <chakra.h4 text-style="display.xs" mt="6" mb="2">
+  <h4 class="mb-2 mt-6 text-xl font-semibold">
     <slot />
-  </chakra.h4>
+  </h4>
 </template>
