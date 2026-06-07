@@ -1,15 +1,13 @@
 <script setup lang="ts">
-defineProps<{ id: string }>();
+defineProps<{ id?: string }>();
 </script>
 
 <template>
-  <chakra.h1
+  <h1
     id="skip-nav"
-    text-style="display.lg"
-    mb="5"
-    max-w="85ch"
-    tab-index="-1"
+    tabindex="-1"
+    class="mb-5 max-w-[85ch] text-4xl font-bold tracking-tight"
   >
     <slot />
-  </chakra.h1>
+  </h1>
 </template>

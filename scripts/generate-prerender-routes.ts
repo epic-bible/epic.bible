@@ -5,9 +5,11 @@ import consola from "consola";
 import { supabase } from "../services/supabase";
 
 export async function generatePrerenderRoutes() {
-  const { data: books, error } = await supabase.from("Books").select("*");
+  const { data, error } = await supabase.from("Books").select("*");
 
   if (error) throw error;
+
+  const books = (data ?? []) as Array<{ name: string; chapters: number }>;
 
   const bookRoutes = books.map((book) => `/books/${book.name}`);
   const chapterRoutes = books.reduce((acc, book) => {

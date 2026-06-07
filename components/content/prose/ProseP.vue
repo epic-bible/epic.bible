@@ -1,9 +1,5 @@
-<script setup lang="ts">
-import { chakra } from "@chakra-ui/vue-next";
-</script>
-
 <template>
-  <chakra.p>
+  <p class="my-4 leading-7">
     <slot />
-  </chakra.p>
+  </p>
 </template>

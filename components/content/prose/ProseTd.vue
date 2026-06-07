@@ -1,15 +1,5 @@
-<script setup lang="ts">
-import { chakra } from "@chakra-ui/vue-next";
-</script>
-
 <template>
-  <chakra.td
-    p="2"
-    border-top-width="1px"
-    border-color="inherit"
-    font-size="sm"
-    white-space="normal"
-  >
+  <td class="whitespace-normal border-t p-2 text-sm">
     <slot />
-  </chakra.td>
+  </td>
 </template>

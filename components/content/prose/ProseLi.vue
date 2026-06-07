@@ -1,9 +1,5 @@
-<script setup lang="ts">
-import { CListItem } from "@chakra-ui/vue-next";
-</script>
-
 <template>
-  <CListItem pb="4px" ml="12px">
+  <li class="ml-3 pb-1">
     <slot />
-  </CListItem>
+  </li>
 </template>

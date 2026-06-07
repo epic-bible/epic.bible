@@ -1,9 +1,5 @@
-<script setup lang="ts">
-import { COrderedList } from "@chakra-ui/vue-next";
-</script>
-
 <template>
-  <COrderedList>
+  <ol class="my-4 list-decimal pl-6">
     <slot />
-  </COrderedList>
+  </ol>
 </template>

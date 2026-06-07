@@ -3,7 +3,7 @@
 </template>
 
 <script setup lang="ts">
-import Book from "@/components/widgets/book.server.vue";
+import Book from "@/components/widgets/book.vue";
 import { useSupabase } from "@/hooks/use-supabase";
 
 const route = useRoute();
@@ -16,7 +16,7 @@ const { data: book } = await useAsyncData(
     const { data, error } = await supabase
       .from("Books")
       .select()
-      .eq("name", _book.value)
+      .eq("name", String(_book.value))
       .limit(1);
     if (error) throw error;
     else return data[0];

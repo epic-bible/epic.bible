@@ -3,7 +3,9 @@ import { __DEV__ } from "@/utils/env";
 
 export function useAuth() {
   const supabaseUser = useSupabaseUser();
-  const client = useSupabaseAuthClient<Database>();
+  // `useSupabaseAuthClient` was removed in @nuxtjs/supabase v2; the regular
+  // client now exposes auth as well.
+  const client = useSupabaseClient<Database>();
 
   const user = computed(() => supabaseUser.value?.user_metadata);
 

@@ -1,11 +1,7 @@
-<script setup lang="ts">
-import { CCode, useColorModeValue } from "@chakra-ui/vue-next";
-
-const color = useColorModeValue("emerald.500", "purple.200");
-</script>
-
 <template>
-  <CCode :color="color" font-size="1em" font-weight="500" px="2" rounded="lg">
+  <code
+    class="rounded-lg bg-muted px-2 py-0.5 font-medium text-emerald-600 dark:text-purple-200"
+  >
     <slot />
-  </CCode>
+  </code>
 </template>
